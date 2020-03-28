@@ -122,9 +122,9 @@ https://keras.io/models/model/
 ##### NOTE:
 See ```twitter_30_day_premium_api_call_all_airlines.ipynb``` in this repository for code used to obtain unlabeled tweets from the Twitter Developer API.
 
-##### Objectives:
+##### Steps:
 
--Load Kaggle labeled tweets
+-Load Kaggle labeled tweets from csv file
 
 -Load unlabeled tweets obtained from Twitter Developer API
 
@@ -133,11 +133,11 @@ See ```twitter_30_day_premium_api_call_all_airlines.ipynb``` in this repository 
 
 # Scrub
 
-##### Objectives:
+##### Steps:
 
 -Apply clean_tweet function to Kaggle tweets and unlabeled tweets
 
-    -Lowercase tweets
+    -Lowercase all words
     
     -Remove punctuation, URLs
     
@@ -154,11 +154,11 @@ See ```twitter_30_day_premium_api_call_all_airlines.ipynb``` in this repository 
 
 # Explore
 
-##### Objectives:
+##### Steps:
 
 -Visualize tweet class distribution
 
--Generate Wordclouds for tweet classes
+-Generate wordclouds for tweet classes
 
 -Generate word frequency distribution plots for tweet classes
 
