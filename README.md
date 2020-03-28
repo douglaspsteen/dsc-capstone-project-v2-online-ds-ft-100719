@@ -1,6 +1,21 @@
 # Leveraging Twitter Data in the Airline Industry: How to More Efficiently Identify Customer Sentiment Using NLP and Machine Learning 
 ###### Flatiron School Capstone Project
 
+# Abstract
+
+Twitter is one of the world's most popular social media platforms, with roughly 330 million active users worldwide as of 2019 (https://www.oberlo.com/blog/twitter-statistics). Since Twitter allow users to quickly and concisely make statements or ask questions about a specific topic, tweets can be an invaluable information source for companies to learn from customer statements about a product or service.
+
+Text data is being increasingly used to learn about customers through Natural Language Processing (NLP). NLP allows for the numerical representation of text data, which is critical for any machine learning (ML) applications that utilize text data. Today, Twitter is one of the richest publicly available sources of such text data.
+
+This project explores the applications of NLP and ML text classification to Twitter users discussing the airline industry. Specifically, I aim to address the following questions: (1) Which combination of classification algorithm and vectorization method performs best for classifying an airline-related tweet as positive, negative, or neutral? (2) How accurately can this classification be made? (3) Can a large quantity of unlabeled tweets be used in an unsupervised manner to improve classification accuracy for a smaller quantity of labeled tweets?
+
+To answer these questions, I first obtain (1) ~14.6 k airline-related tweets labeled as positive, negative, or neutral (https://www.kaggle.com/crowdflower/twitter-airline-sentiment), and  (2) ~41.5 unlabeled airline-related tweets (https://developer.twitter.com/en). I then develop classification algorithms using multiple NLP vectorization methods (TF-IDF, Doc2Vec, GloVe, GloVe + Doc2Vec) and ML classification algorithms (LinearSVC, Random Forest, Multinomial Naïve Bayes, Adaboost, XGBoost, Neural Network).
+
+A classification accuracy of 89% is achieved using two different techniques: (1) Neural network classifier using GloVe 200d pre-trained word embeddings, and (2) LinearSVC classifier using both GloVe 200d and Doc2Vec embeddings as features.
+
+The addition of ~41.5 k unlabeled tweets while training the unsupervised Doc2Vec embeddings does generally improve classification accuracy when compared to training Doc2Vec on the ~14.6 k labeled tweets alone. However, using Doc2Vec embeddings together with GloVe mean embeddings (GloVe + Doc2Vec) as feature inputs generally does not improve classification accuracy when compared to using GloVe embeddings alone. This is likely due to the fact that GloVe word embeddings are pre-trained on a corpus of tweets several orders of magnitude larger than the dataset used to train Doc2Vec in this study, and therefore the information added by Doc2Vec embeddings is negligible.
+
+
 # Background
 
 Twitter is one of the world's most popular social media platforms, with roughly 330 million active users worldwide as of 2019 (https://www.oberlo.com/blog/twitter-statistics). Since Twitter allow users to quickly and concisely make statements or ask questions about a specific topic, tweets can be an invaluable information source for companies to learn about how customers feel about their product or service. 
