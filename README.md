@@ -31,7 +31,7 @@ So, why would we want to apply NLP and machine learning classification to tweets
 
 # Project Overview
 
-![pdf](tweet_classification_files/project_overview.pdf)
+![png](tweet_classification_files/project_overview.png)
 
 # Dataset
 
