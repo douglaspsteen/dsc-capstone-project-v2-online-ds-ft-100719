@@ -51,7 +51,7 @@ See ```twitter_30_day_premium_api_call_all_airlines.ipynb``` in this repository 
 
 Term Frequency-Inverse Document Frequency (TF-IDF) is a technique used to vectorize words in a corpus of documents. TF-IDF is based on the idea that rare words contain more valuable information for classification than commonly occurring words in the documents. TF-IDF is the product of Term Frequency (TF) and Inverse Document Frequency (IDF), given by the equations below:
 
-![png](tweet_classification_files/TF_equation.png)
+![png](tweet_classification_files/TF_equation.png
 
 ![png](tweet_classification_files/IDF_equation.png)
 
