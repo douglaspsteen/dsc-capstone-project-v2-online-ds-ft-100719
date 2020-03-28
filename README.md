@@ -190,8 +190,11 @@ See ```twitter_30_day_premium_api_call_all_airlines.ipynb``` in this repository 
 
 ###### Neutral Tweets Wordcloud
 
-![png](tweet_classification_files/tweet_classification_64_0.png)
+![png](tweet_classification_files/tweet_classification_62_0.png)
 
+##### FreqDist for neutral tweets
+
+![png](tweet_classification_files/tweet_classification_64_0.png)
 
 
 # Model Part 1: Supervised Tf-idf Classifiers
