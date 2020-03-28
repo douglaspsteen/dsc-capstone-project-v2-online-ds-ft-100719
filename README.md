@@ -404,6 +404,15 @@ Confusion Matrix, Classification Report, Accuracy Score
 
 Including doc2vec embeddings with GloVe mean word embeddings slightly improves accuracy for some classifiers (LinearSVC - 89%, AdaBoost - 83%, XGBoost - 87%), and decreases accuracy for others (Random Forest - 81%, neural network - 88%).
 
+##### Summary barplot of classifier accuracy
+
+![png](tweet_classification_files/tweet_classification_262_0.png)
+
+###### Confusion matrix plot for best performing model
+
+![png](tweet_classification_files/tweet_classification_271_0.png)
+
+
 # Conclusions
 
 1) The best classification accuracy achieved with respect to whether an airline-related tweet is positive, negative, or neutral is 89%, using either of the following methods:
@@ -447,16 +456,3 @@ Including doc2vec embeddings with GloVe mean word embeddings slightly improves a
     -Neutral: requests for information, questions
 
 3) Twitter sentiment classifiers are most effective when using GloVe pre-trained word vectors. Since GloVe vectors are trained on 2 billion tweets, they capture more information than can be obtained by training a Doc2Vec model from scratch on a smaller corpus of unlabeled tweets (~41.5k unlabeled tweets used in this study).
-
-# Appendix
-
-##### Plot summary barplot of classifier accuracy
-
-
-![png](tweet_classification_files/tweet_classification_262_0.png)
-    
-
-###### Confusion matrix plot for best performing model
-
-
-![png](tweet_classification_files/tweet_classification_271_0.png)
