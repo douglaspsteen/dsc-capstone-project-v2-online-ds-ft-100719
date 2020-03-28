@@ -202,7 +202,7 @@ Kaggle labeled tweets
 ##### Evaluation:
 Confusion Matrix, Classification Report, Accuracy Score
 
-
+##### Interpretation:
 
 Using TF-IDF as a vectorizer, the simple Neural Network performed as the best classifier with 82% accuracy, closely followed by LinearSVC (81%).
 
@@ -227,6 +227,7 @@ Kaggle labeled tweets
 ##### Evaluation:
 Confusion Matrix, Classification Report, Accuracy Score
 
+##### Interpretation:
 
 Using doc2vec embeddings trained on the Kaggle labeled data, the neural network is the best performing classifier at 81%. This accuracy is slightly less than that achieved by the neural network using TF-IDF vectorization.
 
@@ -248,6 +249,8 @@ Kaggle labeled tweets (for the classification task)
 
 ##### Evaluation:
 Confusion Matrix, Classification Report, Accuracy Score
+
+##### Interpretation:
 
 The neural network is the best performing classifier using doc2vec embeddings at 82%.
 
@@ -272,6 +275,7 @@ Kaggle labeled tweets
 ##### Evaluation:
 Confusion Matrix, Classification Report, Accuracy Score
 
+##### Interpretation:
 
 Using GloVe 100d mean embeddings as input to classification models results in marked improvement over the TF-IDF and Doc2vec methods. The neural network and LinearSVC classifiers both achieved 87% classification accuracy.
 
@@ -294,6 +298,7 @@ Kaggle labeled tweets
 ##### Evaluation:
 Confusion Matrix, Classification Report, Accuracy Score
 
+##### Interpretation:
 
 Increasing the dimesions for GloVe from 100d to 200d resulted in an increase in classification accuracy for LinearSVC (88%), Multinomial NB (71%), and neural network (89%). 
 
@@ -401,6 +406,7 @@ Confusion Matrix, Classification Report, Accuracy Score
 </table>
 </div>
 
+##### Interpretation
 
 Including doc2vec embeddings with GloVe mean word embeddings slightly improves accuracy for some classifiers (LinearSVC - 89%, AdaBoost - 83%, XGBoost - 87%), and decreases accuracy for others (Random Forest - 81%, neural network - 88%).
 
