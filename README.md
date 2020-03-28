@@ -16,13 +16,9 @@ A classification accuracy of 89% is achieved using two different techniques: (1)
 The addition of ~41.5 k unlabeled tweets while training the unsupervised Doc2Vec embeddings does generally improve classification accuracy when compared to training Doc2Vec on the ~14.6 k labeled tweets alone. However, using Doc2Vec embeddings together with GloVe mean embeddings (GloVe + Doc2Vec) as feature inputs generally does not improve classification accuracy when compared to using GloVe embeddings alone. This is likely due to the fact that GloVe word embeddings are pre-trained on a corpus of tweets several orders of magnitude larger than the dataset used to train Doc2Vec in this study, and therefore the information added by Doc2Vec embeddings is negligible.
 
 
-# Background
+# Purpose
 
-Twitter is one of the world's most popular social media platforms, with roughly 330 million active users worldwide as of 2019 (https://www.oberlo.com/blog/twitter-statistics). Since Twitter allow users to quickly and concisely make statements or ask questions about a specific topic, tweets can be an invaluable information source for companies to learn about how customers feel about their product or service. 
-
-Text data is being increasingly used to learn about customers through Natural Language Processing (NLP). NLP allows for the numerical representation of text data, which is critical for any machine learning (ML) applications that utilize text data.
-
-So, why would we want to apply NLP and machine learning classification to tweets about the airline industry? An efficient and accurate tweet classification system could offer the following advantages:
+Why would we want to apply NLP and machine learning classification to tweets about the airline industry? An efficient and accurate tweet classification system could offer the following advantages:
 
     -Negative tweets can be identified and addressed by appropriate customer service teams
     
@@ -31,8 +27,6 @@ So, why would we want to apply NLP and machine learning classification to tweets
     -Questions contained within tweets can be identified and addressed by customer service teams
     
     ...and so on.
-
-# Purpose
 
 ##### This project aims to address the following questions using NLP and ML classification techniques:
 
@@ -43,6 +37,7 @@ So, why would we want to apply NLP and machine learning classification to tweets
 
 
 3. Can a large amount of unlabeled tweets be used to improve classification accuracy for a labeled tweets?
+
 
 # Project Overview
 
