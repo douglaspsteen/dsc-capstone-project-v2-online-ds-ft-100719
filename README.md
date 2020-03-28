@@ -29,6 +29,10 @@ So, why would we want to apply NLP and machine learning classification to tweets
 
 3. Can a large amount of unlabeled tweets be used to improve classification accuracy for a labeled tweets?
 
+# Project Overview
+
+![pdf](tweet_classification_files/project_overview.pdf)
+
 # Dataset
 
 ##### 14.6k airline-related tweets labeled as Positive, Negative, Neutral (February 2015)
@@ -319,19 +323,6 @@ Confusion Matrix, Classification Report, Accuracy Score
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
